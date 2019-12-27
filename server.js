@@ -17,7 +17,9 @@ const app = express()
 app.use(bodyParser.json())
 app.use(cors())
 
-app.post ('/contact', (req, res) => {
+app.get('/', (req,res) => {res.send('it is working')})
+
+app.post('/contact', (req, res) => {
     const { name, email, message} = req.body
     database('Messages').insert({
         Name: name,
