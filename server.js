@@ -28,6 +28,6 @@ app.post ('/contact', (req, res) => {
     .catch(err => res.status(400).send('failure'))
 })
 
-app.listen(3000, () => {
-    console.log('app is running on port 3000')
+app.listen(process.env.PORT, () => {
+    console.log('app is running')
 })
