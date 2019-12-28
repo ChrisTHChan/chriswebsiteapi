@@ -19,8 +19,8 @@ app.get('/', (req,res) => {res.send('it is working')})
 
 app.post('/contact', (req, res) => {
     const { name, email, message} = req.body
-    database('Messages').insert({
-        Name: name,
+    database('messages').insert({
+        name: name,
         email: email,
         message: message
     }) 
