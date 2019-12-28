@@ -6,7 +6,7 @@ var knex = require('knex')
 const database = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'postgresql-lively-44316',
       user : 'postgres',
       password : 'rshutj967',
       database : 'test'
